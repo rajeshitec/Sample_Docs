@@ -1,17 +1,20 @@
 # Documentation Theme Update
 
-Your documentation has been updated with a modern theme inspired by Ollama's docs design!
+Your documentation has been updated with the **ReadTheDocs theme** - a professional, clean documentation style similar to Ollama's layout!
 
 ## What's Changed
 
 ✨ **Theme Improvements:**
-- Modern Material Design theme with enhanced typography
-- Indigo color scheme inspired by Ollama's documentation
-- Sticky navigation tabs for better UX
-- Improved code blocks with syntax highlighting
-- Better responsive design
-- Dark/light mode toggle
-- Enhanced tables and admonitions styling
+- **ReadTheDocs theme** - Clean, professional look without the white header bar issue
+- **Left sidebar navigation** - Main menu on the left (like Ollama docs)
+- **Right sidebar TOC** - Page sections on the right for easy navigation
+- **Sticky navigation** - Sidebar stays visible as you scroll
+- **Modern color scheme** - Indigo primary color (#4f46e5) inspired by Ollama
+- **Enhanced typography** - Better spacing and readability
+- **Dark code blocks** - Modern dark theme for code
+- **Improved tables** - Better styling with hover effects
+- **Responsive design** - Works great on mobile and desktop
+- **Clean header** - No unwanted white bars, minimal top navigation
 
 ## Building Locally
 
@@ -40,7 +43,7 @@ Your documentation has been updated with a modern theme inspired by Ollama's doc
 
 ## Deploying to GitHub Pages
 
-The documentation is automatically deployed to GitHub Pages when you push to the `main` branch. The GitHub Actions workflow in `.github/workflows/deploy.yml` handles the build and deployment.
+The documentation is automatically deployed to GitHub Pages when you push to the `main` branch using the GitHub Actions workflow.
 
 ### Manual Deployment (if needed)
 
@@ -48,38 +51,56 @@ The documentation is automatically deployed to GitHub Pages when you push to the
 mkdocs gh-deploy
 ```
 
+## Layout
+
+```
+┌─────────────────────────────────────────────────────────┐
+│ Navigation Bar (Minimal header)                          │
+├──────────────────────┬──────────────────────┬────────────┤
+│                      │                      │            │
+│  Left Sidebar        │   Main Content       │  Right TOC │
+│  (Navigation Menu)   │   (Article)          │  (Sections)│
+│                      │                      │            │
+└──────────────────────┴──────────────────────┴────────────┘
+```
+
 ## Customization
 
 ### Colors
 Edit `docs/overrides/assets/stylesheets/custom.css` to change:
 - Primary color (currently indigo `#4f46e5`)
-- Accent colors
-- Font choices
+- Text colors
+- Background colors
+- Border colors
 
-### Logo & Favicon
-Update these in `mkdocs.yml`:
+### Logo
+Update in `mkdocs.yml`:
 ```yaml
 theme:
   logo: https://your-logo-url
-  favicon: https://your-favicon-url
 ```
 
-### Navigation
-Modify the `nav` section in `mkdocs.yml` to reorganize your documentation structure.
+### Navigation Structure
+Modify the `nav` section in `mkdocs.yml` to reorganize your documentation.
 
-## Features Enabled
+### Font Changes
+Edit the Google Fonts link in `docs/overrides/main.html`
 
-- ✅ Sticky tabs navigation
-- ✅ Integrated table of contents
-- ✅ Search with highlighting
-- ✅ Code copying
-- ✅ Code annotations
-- ✅ Content tabs with linked state
-- ✅ Tooltips
-- ✅ Auto-hiding header
-- ✅ Instant page loading
+## Features
+
+- ✅ Clean sidebar navigation (collapsible)
+- ✅ Sticky sidebar for easy navigation
+- ✅ Right-side table of contents
+- ✅ Search functionality
+- ✅ Responsive design
+- ✅ Code syntax highlighting
+- ✅ Custom styling (admonitions, tables, links)
+- ✅ Integrated GitHub link
+- ✅ Next/Previous page navigation
+- ✅ Mobile-friendly
 
 ## Learn More
 
-- [Material for MkDocs Documentation](https://squidfunk.github.io/mkdocs-material/)
+- [ReadTheDocs Theme Documentation](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs)
 - [MkDocs Official Documentation](https://www.mkdocs.org/)
+

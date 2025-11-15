@@ -5,45 +5,15 @@ repo_url: https://github.com/rajeshitec/Sample_Docs
 repo_name: Sample_Docs
 
 theme:
-  name: material
+  name: readthedocs
   custom_dir: docs/overrides
   logo: https://via.placeholder.com/40?text=SD
-  favicon: https://via.placeholder.com/16?text=SD
-  font:
-    text: Inter
-    code: Fira Code
-  palette:
-    - scheme: light
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: dark
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.indexes
-    - navigation.top
-    - navigation.instant
-    - navigation.tracking
-    - toc.integrate
-    - toc.follow
-    - search.highlight
-    - search.suggest
-    - search.share
-    - content.code.copy
-    - content.code.select
-    - content.code.annotate
-    - content.tabs.link
-    - content.tooltips
-    - header.autohide
+  collapse_navigation: true
+  sticky_navigation: true
+  navigation_depth: 4
+  titles_only: false
+  include_homepage_in_sidebar: true
+  prev_next_buttons_location: bottom
 
 nav:
   - Overview: index.md
@@ -70,9 +40,7 @@ nav:
       - Changelog: reference/changelog.md
 
 plugins:
-  - search:
-      lang: en
-  - awesome-pages
+  - search
 
 extra_css:
   - overrides/assets/stylesheets/custom.css
@@ -82,5 +50,3 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/rajeshitec/Sample_Docs
       name: GitHub
-  generator: false
-
