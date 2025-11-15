@@ -1,0 +1,42 @@
+site_name: Project Documentation
+site_description: Documentation for the Project IT application
+site_url: https://rajeshitec.github.io/project-docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Overview: index.md
+  - Getting started:
+      - Overview: getting-started/index.md
+      - Onboarding: getting-started/onboarding.md
+      - User workflows: getting-started/user-workflows.md
+  - Functional specification:
+      - Overview: functional/index.md
+      - Use cases: functional/use-cases.md
+      - Requirements: functional/requirements.md
+  - Technical documentation:
+      - Architecture: technical/architecture.md
+      - API reference: technical/api.md
+      - Data model: technical/data-model.md
+      - Security: technical/security.md
+      - Deployment: technical/deployment.md
+  - Operations:
+      - Runbook: operations/runbook.md
+      - Monitoring & alerts: operations/monitoring.md
+      - Troubleshooting: operations/troubleshooting.md
+  - Reference:
+      - Glossary: reference/glossary.md
+      - Changelog: reference/changelog.md
+
+plugins:
+  - search
